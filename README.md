@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/order-summary-component.jpg)
+![](./screenshot/order-summary-component.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/PublicDavid/FEM_Order-Summary-component/]
+- Live Site URL: [https://publicdavid.github.io/FEM_Order-Summary-component/]
 
 ## My process
 
