@@ -1,0 +1,135 @@
+:root {
+    --clr-prim-pal: hsl(225, 100%, 94%);
+    --clr-prim-bri: hsl(245, 75%, 52%);
+    --clr-neut-pal: hsl(225, 100%, 98%);
+    --clr-neut-des: hsl(224, 23%, 55%);
+    --clr-neut-dar: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--clr-prim-pal) left top/contain url('../images/pattern-background-desktop.svg') no-repeat;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card,
+.card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.card-img {
+    border-radius: 20px 20px 0 0;
+}
+
+.card-details {
+    padding: 2em;
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+    color: var(--clr-neut-dar);
+}
+
+.card-title {
+    margin-bottom: 1em;
+    margin-top: .5em;
+}
+
+.card-text {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.card-plan {
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-neut-pal);
+    padding: 1.2em 1em;
+    border-radius: 20px;
+    margin: 1.2em 0;
+}
+
+.card-plan-text {
+    margin-left: 1.1em;
+    font-size: .85rem;
+    font-weight: 400;
+    color: var(--clr-neut-dar);
+}
+
+.card-accent {
+    font-weight: 700;
+}
+
+.card-plan-link {
+    margin-left: auto;
+    color: var(--clr-prim-bri);
+    font-weight: 700;
+    font-size: .8rem;
+    transition: color 230ms ease-in-out;
+}
+
+.card-plan-link:focus,
+.card-plan-link:hover {
+    color: var(--clr-neut-dar);
+}
+
+.card-btn,
+.card-link {
+    text-align: center;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.card-btn {
+    background-color: var(--clr-prim-bri);
+    padding: 1em 2em;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--clr-neut-pal);
+    margin-bottom: 2em;
+    transition: background-color 230ms ease-in-out;
+}
+
+.card-btn:focus,
+.card-btn:hover {
+    background-color: var(--clr-neut-dar);
+}
+
+.card-link {
+    color: var(--clr-neut-des);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.card-link:focus,
+.card-link:hover {
+    text-decoration: underline;
+}
